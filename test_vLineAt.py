@@ -1,37 +1,4 @@
 
-# def vLineAt(board: list, row: int, column: int) -> bool:
-#     if row == 0:
-#         if board[row][column] == board[row + 1][column]:
-#             if board[row][column] == board[row + 2][column]:
-#                 return True
-#
-#     if row == len(board) - 1 or row > 1:
-#         if board[row][column] == board[row - 1][column]:
-#             if board[row][column] == board[row - 2][column]:
-#                 return True
-#
-#             elif row < len(board) - 2:
-#                 if board[row][column] == board[row + 1][column]:
-#                     return True
-#
-#         if row < len(board) - 2:
-#             if board[row][column] == board[row + 1][column]:
-#                 if board[row][column] == board[row + 2][column]:
-#                     return True
-#
-#     if 1 == row < len(board) - 1:
-#         if board[row][column] == board[row - 1][column]:
-#             if board[row][column] == board[row + 1][column]:
-#                 return True
-#
-#         if row < len(board) - 2:
-#             if board[row][column] == board[row + 1][column]:
-#                 if board[row][column] == board[row + 2][column]:
-#                     return True
-#
-#     else:
-#         return False
-
 def vLineAt(board: list, row: int, column: int) -> bool:
     if row == 0 or row < len(board) - 2:
         if board[row][column] == board[row + 1][column]:
